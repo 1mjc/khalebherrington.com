@@ -18,6 +18,9 @@ Everything lives in `js/works.js`. Copy a piece, change the fields, save.
 
 All text in `works.js` is sample copy. Replace it with your own.
 
+## Aqualine font
+Put your licensed font file in `fonts/` as `Aqualine.woff2` (or .woff/.otf/.ttf). Until then the site uses a fallback serif. To convert an .otf/.ttf to woff2, use a free converter such as transfonter.org.
+
 ## Files
 - `index.html` structure
 - `css/style.css` look
