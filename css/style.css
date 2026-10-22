@@ -110,22 +110,13 @@ button { font: inherit; color: inherit; }
 }
 .hero-copy { position: relative; max-width: var(--max); width: 100%; margin: 0 auto; }
 
-.name {
-  font-family: var(--display);
-  font-weight: 400;
-  font-size: clamp(2.3rem, 7.5vw, 6.5rem);
-  line-height: 1.05;
-  letter-spacing: .02em;
-  color: transparent;
-  -webkit-text-stroke: 1.4px #fff;
-  paint-order: stroke fill;
-  filter: url(#bleed);
-}
-.name .ln {
-  display: inline-block;
+.name { line-height: 0; filter: url(#bleed); }
+.wordmark {
+  display: block;
+  width: clamp(15rem, 31vw, 25rem);
+  height: auto;
   animation: soak 2.4s cubic-bezier(.2, .7, .2, 1) both;
 }
-.name .ln:nth-child(2) { animation-delay: .45s; }
 
 @keyframes soak {
   from { opacity: 0; filter: blur(18px); transform: translateY(.04em) scale(1.015); }
@@ -351,6 +342,6 @@ dialog.piece[open] { animation: open .35s ease both; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .name .ln, .lede, dialog.piece[open] { animation: none; }
+  .wordmark, .lede, dialog.piece[open] { animation: none; }
   .thumb img { transition: none; }
 }
